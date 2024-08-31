@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Error Validations Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">91,661</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Submit Order Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">93,538</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">2</th><th class="num">185,199</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Error Validations Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">shivaniankam.tests.ErrorValidationsTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1724311134109</td><td rowspan="1">7222</td></tr><tr class="passedeven"><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1724311167942</td><td rowspan="1">17078</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Submit Order Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">shivaniankam.tests.SubmitOrderTest</td><td><a href="#m2">submitOrder</a></td><td rowspan="2">1724311133849</td><td rowspan="2">25008</td></tr><tr class="failedeven"><td><a href="#m3">submitOrder</a></td></tr><tr><th colspan="4">Submit Order Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">shivaniankam.tests.SubmitOrderTest</td><td><a href="#m4">OrderHistoryTest</a></td><td rowspan="1">1724311191633</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Error Validations Test</h2><h3 id="m0">shivaniankam.tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">shivaniankam.tests.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Submit Order Test</h2><h3 id="m2">shivaniankam.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=shvAnk10, email=shvank@gmail.com, productName=ZARA COAT 3}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
+	The field CheckoutPage.submit is not visible
+
+	at shivaniankam.pageobjects.ConfirmationPage.getConfirmMessage(ConfirmationPage.java:28)
+	at shivaniankam.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">shivaniankam.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=shvAnk10, email=vanishv@gmail.com, productName=IPHONE 13 PRO}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (fc81fffa8d516612bec7eaa907d89c81)] -&gt; css selector: .ng-animating] (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\SHIVAN~1.ANK\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60485/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc81fffa8d516612bec7eaa907d89c81
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at shivaniankam.AbstractComponents.AbstractComponent.waitForElementToDisappear(AbstractComponent.java:56)
+	at shivaniankam.pageobjects.ProductCatalog.addProductToCart(ProductCatalog.java:54)
+	at shivaniankam.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">shivaniankam.tests.SubmitOrderTest#OrderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method shivaniankam.tests.SubmitOrderTest.OrderHistoryTest() on instance shivaniankam.tests.SubmitOrderTest@5a59ca5e depends on not successfully finished methods 
+[shivaniankam.tests.SubmitOrderTest.submitOrder() on instance shivaniankam.tests.SubmitOrderTest@5a59ca5e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
